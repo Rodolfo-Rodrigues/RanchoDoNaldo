@@ -20,6 +20,8 @@ ul{list-style: none;}
 
 .nav li:first-child{margin-left: 0;}
 
+.nav li:last-child{margin-right: 0;}
+
 .nav a{color:chocolate;}
 
 .nav a:hover{border-bottom: 2px solid chocolate; padding-bottom: 5px;}
