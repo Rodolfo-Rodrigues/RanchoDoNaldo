@@ -43,8 +43,8 @@ ul{list-style: none;}
 .capa a{background-color: #fff; padding:15px 20px; text-transform: uppercase; color:chocolate; width: 150px; text-align: center; border-radius: 10px; font-weight: 700;}
 
 @media (max-width:700px){
-    .capa{background-position: center center;}
-    .capa h2{font-size: 2em;}
+    .capa{background-position: center right; }
+    .capa h2{font-size: 2em; margin-top: -3em; }
     .capa p{font-size: 1.5em;}
 }
 
