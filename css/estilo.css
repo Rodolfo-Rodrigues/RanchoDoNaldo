@@ -1,0 +1,77 @@
+/*css reset*/
+*{margin:0; padding: 0; box-sizing: border-box; font-size: 100%; font-family: 'Roboto', sans-serif;}
+
+img{max-width: 100%}
+
+a{text-decoration: none;}
+
+ul{list-style: none;}
+
+/*header*/
+.topo{width: 100%; display: flex;justify-content: space-around; align-items: center;}
+
+.logo{background-image: url(../img/rancho.png); background-repeat: no-repeat; width: 200px; height:100px; background-position: center left;}
+
+.topo h1{font-size: 0;}
+
+.nav{display: flex; text-transform: uppercase;}
+
+.nav li{margin: 0 15px;}
+
+.nav li:first-child{margin-left: 0;}
+
+.nav a{color:chocolate;}
+
+.nav a:hover{border-bottom: 2px solid chocolate; padding-bottom: 5px;}
+
+@media (max-width:700px){
+    .topo{flex-direction: column;}
+    .topo li{margin: 10px 15px;}
+    .topo a{font-size: 0.8em;}
+}
+
+/*capa*/
+
+.capa{display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center; width: 100%; height:459px; background-image: url(../img/rancho.jpg); background-repeat: no-repeat; background-position: center top; background-size: cover;}
+
+.capa h2{font-size: 3em; color: #fff; margin-bottom: 20px;}
+
+.capa p{font-size: 2em; color: #fff; margin-bottom: 40px;}
+
+.capa a{background-color: #fff; padding:15px 20px; text-transform: uppercase; color:chocolate; width: 150px; text-align: center; border-radius: 10px; font-weight: 700;}
+
+@media (max-width:700px){
+    .capa{background-position: center center;}
+    .capa h2{font-size: 2em;}
+    .capa p{font-size: 1.5em;}
+}
+
+/*animais*/
+.animais{display: flex; flex-direction: column; align-items: center; text-align: center; }
+
+.animais h3{font-size:2.5em; color: chocolate; margin: 50px 0;}
+
+.animais hr{width: 600px; border: 2px solid chocolate; margin: 10px 0;}
+
+.grid{display: flex; flex-flow: wrap; justify-content: space-around;align-content: space-between; margin: 0 1%;}
+
+.grid img{width: 400px; height:300px; border-radius: 25px; margin: 25px 1%; box-shadow: 4px 4px 3px gray; border: 1px solid gray;}
+
+@media (max-width:700px){
+    .animais h3{font-size: 2em; margin: 10px 1%;}
+    .animais hr{width: 200px;}
+    .grid img{width: 290px; height: 200px; margin: 15px 10px;}
+}
+/*footer*/
+
+footer{background-color: chocolate; height: 100px; width: 100%; display: flex; color:#fff; align-items: center; justify-content: center; font-size: 1.1em; justify-content: space-around; text-align: center;}
+
+footer a{color:#fff; font-size: 2em; margin-right: 15px;}
+
+footer a:hover{border-bottom:2px solid white; padding-bottom: 10px;}
+    
+@media (max-width:700px){
+    footer{flex-direction: column; padding: 15px 0; height: 150px;}
+}
+    
+
