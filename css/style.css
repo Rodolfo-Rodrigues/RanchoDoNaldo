@@ -35,7 +35,7 @@ a.logo:hover{border-bottom: none;padding: 0;}
     .menu ul{flex-direction: row; text-align: center; flex-wrap: wrap;}
     .menu li{margin: 5px 0}
     .menu a{font-size: 0.8rem;}
-    a.logo{font-size: 2.2rem;}
+    a.logo{font-size: 2rem;}
     .fab {font-size:1rem;}
     .formulario{margin-top: 10px;}
     .formulario i{padding: 5px; font-size: 1.5rem;}
@@ -52,7 +52,7 @@ a.logo:hover{border-bottom: none;padding: 0;}
 .capa a{background-color: #fff; padding: 15px 10px; text-transform: uppercase; font-size: 1rem; color:#2080a8; border-radius: 10px;}
 
 @media (max-width:760px){
-    .capa h1{font-size: 2rem;}
+    .capa h1{font-size: 2rem; margin-top: 100px;}
     .capa p{font-size: 1.5rem;}
 }
 
