@@ -1,72 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
-    <title>Rancho do Naldo</title>
+    <title>TECBLOG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="topo">
-        <a class="logo" href="index.html"><h1>Rancho do Naldo</h1></a>
-        <nav>
-            <ul class="nav">
-                <li><a href="">home</a></li>
-                <li><a href="">sobre nós</a></li>
-                <li><a href="">reservas</a></li>
-                <li><a href="">contatos</a></li>
+    <header class="cabecalho">
+
+        <nav class="menu">
+            <ul>
+                <li><a class="logo" href="#">TecBlog</a></li>
+                <li><a href="#">teccast</a></li>
+                <li><a href="#">reviews</a></li>
+                <li><a href="#">cupons</a></li>
+                <li><a href="#">extensão</a></li>
+                <li><a href="#">anuncie</a></li>
+                <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" title="youtube"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
+
+        <form class="formulario" method="post">
+            <button><i class="fas fa-search"></i></button>
+            <input type="search" placeholder="Faça sua busca">
+        </form>
+
     </header>
-    
+
     <section class="capa">
-        <h2>Visite o rancho mais famoso do Brasil</h2>
-        <p> Contrata-se pessoas para alimentar nossos animais</p>
+        <h1> TecBlog - Seu maior portal de notícias da atualidade</h1>
+        <p>Fique por dentro de todas as novidades no mundo da tecnologia</p>
         <a href="">saiba mais</a>
     </section>
-    
-    <section class="animais">
-        <h3>Conheça nossos animais</h3>
-        <hr>
-        
-        <ul class="grid">
-            <li>
-                <img src="img/cavalo1.jpg" alt="cavalo1">
-            </li>
-            
-            <li>
-                <img src="img/cavalo2.jpg" alt="cavalo2">
-            </li>
-            
-            <li>
-                <img src="img/avestruz.jpg" alt="avestruz">
-            </li>
-            
-            <li>
-                <img src="img/ovelha.jpg" alt="ovelha">
-            </li>
-            
-            <li>
-                <img src="img/jacare.jpg" alt="jacare">
-            </li>
-            
-            <li>
-                <img src="img/cavalo3.jpg" alt="cavalo3">
-            </li>
-        </ul>
+
+    <main class="layout">
+
+        <section class="principal">
+           <h2 style="display: none;"> um h2 pra passar no w3c validator</h2>
+            <article class="artigos">
+                <a href="#">
+                    <figure>
+                        <figcaption>news</figcaption>
+                        <img src="img/whatsapp-1212017_640.jpg" alt="whatapp">
+                    </figure>
+                </a>
+
+                <h2>WhatsApp testa QR Codes e Status compartilhado com Facebook</h2>
+                <h3> ontem as 12:00 por <a href="">Rodolfo Rodrigues</a></h3>
+                <p>O WhatsApp está trabalhando para ajudar seus usuários a adicionarem contatos mais rapidamente e a incluírem atualizações do Status diretamente no Facebook. A versão beta 2.19.151 já apresenta indícios das mudanças, mas como estão em desenvolvimento, elas ainda não foram liberadas.</p>
+
+                <p>O WhatsApp também permitirá compartilhar o QR Code como imagem. O código poderá ser mostrado, por exemplo, no site de empresas que usam a versão corporativa do mensageiro. Se o código atual levar a mensagens indesejadas, é possível cancelá-lo e criar um novo a qualquer momento. <a class="saiba-mais" href="">Leia mais</a></p>
+            </article>
+
+            <article class="artigos">
+                <a href="#">
+                    <figure>
+                        <figcaption>news</figcaption>
+                        <img src="img/mobile-phone-1917737_640.jpg" alt="phone">
+                    </figure>
+                </a>
+
+                <h2>Samsung Galaxy A70S deve ser primeiro celular de 64 megapixels</h2>
+                <h3> ontem as 12:00 por <a href="">Rodolfo Rodrigues</a></h3>
+                <p>A Samsung planeja lançar o primeiro celular do mundo com câmera de 64 megapixels no segundo semestre de 2019, segundo o portal coreano de tecnologia ETNews. Ele deve se chamar Galaxy A70S e usar o sensor Isocell da empresa.</p>
+
+                <p>Além disso, o GW1 promete maior desempenho em HDR: ele chega a até 100 dB em tempo real, mais que os 60 dB de outros sensores. Isso significa um alcance dinâmico maior para fotos que não ficam estouradas com muita luz, nem escuras sob pouca iluminação. <a class="saiba-mais" href="">Leia mais</a></p>
+            </article>
+
+            <article class="artigos">
+                <a href="#">
+                    <figure>
+                        <figcaption>news</figcaption>
+                        <img src="img/google-485611_640.jpg" alt="google">
+                    </figure>
+                </a>
+
+                <h2>Google reúne (e esconde) histórico de compras de clientes G Suite</h2>
+                <h3> ontem as 12:00 por <a href="">Rodolfo Rodrigues</a></h3>
+                <p>Nos últimos dias, veio à tona uma ferramenta do Google que reúne as compras online mencionadas em recibos do Gmail. Isso parecia afetar apenas usuários comuns, não clientes do pacote empresarial G Suite. A verdade é um pouco mais complicada: quem está no G Suite vê um histórico vazio de compras — mas elas são monitoradas mesmo assim.</p>
+
+                <p>Se você usar a ferramenta Takeout, que permite baixar os dados da sua conta, haverá a opção Compras e Reservas com a seguinte descrição: <q>suas transações, incluindo entregas, pedidos on-line e reservas anteriores e futuras, coletadas a partir dos serviços do Google, como o Assistente e o Gmail</q>. <a class="saiba-mais" href="">Leia mais</a></p>
+            </article>
+
+            <article class="artigos">
+                <a href="#">
+                    <figure>
+                        <figcaption>news</figcaption>
+                        <img src="img/instagram-1889117_640.jpg" alt="instagram">
+                    </figure>
+                </a>
+
+                <h2>Instagram enfim libera vídeos na horizontal dentro do IGTV</h2>
+                <h3> ontem as 12:00 por <a href="">Rodolfo Rodrigues</a></h3>
+                <p>O vídeo na vertical sofreu uma pequena derrota nesta quinta-feira (23): o IGTV, que antes abrigava somente esse tipo de conteúdo, agora também aceita vídeos na horizontal. O Instagram quer aproveitar seu bilhão de usuários e criar um concorrente para o YouTube; por isso, prévias do IGTV estão aparecendo no feed e na aba Explorar. </p>
+
+                <p>Um dos problemas do IGTV era a obrigatoriedade de conteúdo na vertical: este é um formato pouco usado para conteúdo longo, e o Instagram não havia ensinado seus usuários mais famosos a usá-lo. Também não havia muito incentivo para aprender: o IGTV tinha baixa audiência porque ficava muito escondido na interface. <a class="saiba-mais" href="">Leia mais</a></p>
+            </article>
+
+        </section>
+
+        <aside class="lateral">
+            <h3>Conheça a equipe do Tecblog</h3>
+            <figure class="pessoas">
+                <a href=""><img src="img/urbex-1658436_960_720.jpg" alt="ceo"></a>
+                <figcaption>Rodolfo Rodrigues <br> <span>Fundador e Ceo da TecBlog</span></figcaption>
+            </figure>
+
+            <figure class="pessoas">
+                <a href=""><img src="img/people-2563491_960_720.jpg" alt="ceo"></a>
+                <figcaption>Mariana Amorim <br> <span>Editora executiva</span></figcaption>
+            </figure>
+
+
+            <figure class="pessoas">
+                <a href=""><img src="img/woman-1149911_960_720.jpg" alt="ceo"></a>
+                <figcaption>Camila Pontes <br> <span>Editora</span></figcaption>
+            </figure>
+
+
+            <figure class="pessoas">
+                <a href=""><img src="img/woman-2003647_960_720.jpg" alt="ceo"></a>
+                <figcaption>Cintia Peixoto <br> <span>Editora</span></figcaption>
+            </figure>
+
+        </aside>
+    </main>
+
+    <section class="newsletter">
+        <h3>Assine nossa newslater para se manter informado</h3>
+        <form action="#">
+            <input type="text" placeholder="digite seu email">
+            <button>Assinar</button>
+        </form>
     </section>
-    
-    <footer>
-        <h4>Rancho do Naldo - Todos os direitos resrevados 2019</h4>
-        <div class="midias-sociais">
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
+
+
+    <footer class="rodape">
+        <h4>TecBlog - todos os direitos reservados 2019</h4>
+        <div class="midias">
+            <ul>
+                <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" title="youtube"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
         </div>
     </footer>
-    
+
+
+
 </body>
+
 </html>
