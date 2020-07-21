@@ -1,0 +1,39 @@
+/*CSS Reset*/
+* {margin: 0; padding: 0; list-style: none; text-decoration: none; box-sizing: border-box; font-size: 100%; font-family: sans-serif; scroll-behavior: smooth;}
+img{max-width: 100%;}
+
+/*header*/
+#cabecalho{width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #29B0F6; position: absolute; top: 0; left: 0;}
+#cabecalho .logo{color: #fff; font-family: 'Caesar Dressing', cursive, sans-serif; letter-spacing: 3px; font-size: 1.2rem}
+#menu ul{display: flex;}
+#menu ul li a{display: block; padding: 10px; text-transform: uppercase; font-weight: bold; color: #fff;}
+#menu a:hover {color: gray; transition: 0.6s;}
+i.show_menu{display: none;}
+#menu ul.active{left: 0; transition: all 0.6s;}/*classe adicionada para o menu responsivo*/
+@media screen and (max-width:812px){
+    #menu ul{position: absolute; width: 100%; flex-direction: column; top: 64px; left: -100vw; text-align: center; background-color: #29B0F6; transition: 0.6s;}
+    #menu li {display: block; width: 100vw; border-bottom: 1px solid white;}
+    #menu li:first-child{border-top: 1px solid #fff;}
+    #menu li:hover{background-color:#3ba8a8;}
+    i.show_menu{display: block; color: #fff; padding: 10px; font-size: 1.5rem; cursor: pointer;}
+    #cabecalho .logo{font-size: 1rem;}
+}
+
+/*Hero image*/
+.capa{background-image: url(../imagens/montanha.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; max-width: 1920px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: space-around;}
+.capa h1{color:#fff; font-size: 2.5rem;}
+.capa p{color:#fff; font-size: 1.7rem; text-transform: capitalize; font-weight: bold; margin-top: 20px;}
+.capa a{color:#fff; text-transform: uppercase; background-color: #29B0F6; border-radius: 10px; padding: 10px 40px;font-weight: bold;}
+.capa a:hover {color: gray; transition: 0.6s;}
+@media screen and (max-width:812px){
+    .capa h1{font-size: 1.2rem; margin-top: 190px}
+    .capa p{font-size: 1rem; margin-top: 0;}
+    
+}
+
+/*footer*/
+#rodape{width: 100%; background-color: #29B0F6; display: flex; flex-direction: column; text-align: center; align-items: center; justify-content: space-around; padding: 10px;}
+#rodape h2{color: #fff; margin: 5px;}
+#rodape p{color: #fff;}
+#rodape a{color: #fff;}
+#rodape a:hover{color: gray;}
