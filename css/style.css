@@ -20,7 +20,7 @@ i.show_menu{display: none;}
 }
 
 /*Hero image*/
-.capa{background-image: url(../imagens/montanha.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; max-width: 1920px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: space-around;}
+.capa{background-image: url(../imagens/montanha.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; max-width: 1920px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: space-around; overflow:hidden;}
 .capa h1{color:#fff; font-size: 2.5rem;}
 .capa p{color:#fff; font-size: 1.7rem; text-transform: capitalize; font-weight: bold; margin-top: 20px;}
 .capa a{color:#fff; text-transform: uppercase; background-color: #29B0F6; border-radius: 10px; padding: 10px 40px;font-weight: bold;}
