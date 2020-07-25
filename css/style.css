@@ -1,39 +1,456 @@
 /*CSS Reset*/
-* {margin: 0; padding: 0; list-style: none; text-decoration: none; box-sizing: border-box; font-size: 100%; font-family: sans-serif; scroll-behavior: smooth;}
-img{max-width: 100%;}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
 
 /*header*/
-#cabecalho{width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #29B0F6; position: absolute; top: 0; left: 0;}
-#cabecalho .logo{color: #fff; font-family: 'Caesar Dressing', cursive, sans-serif; letter-spacing: 3px; font-size: 1.2rem}
-#menu ul{display: flex;}
-#menu ul li a{display: block; padding: 10px; text-transform: uppercase; font-weight: bold; color: #fff;}
-#menu a:hover {color: gray; transition: 0.6s;}
-i.show_menu{display: none;}
-#menu ul.active{left: 0; transition: all 0.6s;}/*classe adicionada para o menu responsivo*/
-@media screen and (max-width:812px){
-    #menu ul{position: absolute; width: 100%; flex-direction: column; top: 64px; left: -100vw; text-align: center; background-color: #29B0F6; transition: 0.6s;}
-    #menu li {display: block; width: 100vw; border-bottom: 1px solid white;}
-    #menu li:first-child{border-top: 1px solid #fff;}
-    #menu li:hover{background-color:#3ba8a8;}
-    i.show_menu{display: block; color: #fff; padding: 10px; font-size: 1.5rem; cursor: pointer;}
-    #cabecalho .logo{font-size: 1rem;}
+#cabecalho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #29B0F6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
 }
 
-/*Hero image*/
-.capa{background-image: url(../imagens/montanha.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; max-width: 1920px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: space-around; overflow:hidden;}
-.capa h1{color:#fff; font-size: 2.5rem;}
-.capa p{color:#fff; font-size: 1.7rem; text-transform: capitalize; font-weight: bold; margin-top: 20px;}
-.capa a{color:#fff; text-transform: uppercase; background-color: #29B0F6; border-radius: 10px; padding: 10px 40px;font-weight: bold;}
-.capa a:hover {color: gray; transition: 0.6s;}
-@media screen and (max-width:812px){
-    .capa h1{font-size: 1.2rem; margin-top: 190px}
-    .capa p{font-size: 1rem; margin-top: 0;}
-    
+#cabecalho .logo {
+    color: #fff;
+    font-family: 'Caesar Dressing', cursive, sans-serif;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
 }
+
+#menu ul {
+    display: flex;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #fff;
+}
+
+#menu a:hover {
+    color: gray;
+    transition: 0.6s;
+}
+
+i.show_menu {
+    display: none;
+}
+
+#menu ul.active {
+    left: 0;
+    transition: all 0.6s;
+    /*classe adicionada para o menu responsivo*/
+}
+
+
+@media screen and (max-width:812px) {
+    #cabecalho {
+        flex-direction: column;
+    }
+
+    #menu ul {
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        top: 47px;
+        left: -100vw;
+        text-align: center;
+        background-color: #29B0F6;
+        transition: 0.6s;
+    }
+
+    #menu li {
+        display: block;
+        width: 100vw;
+        border-bottom: 1px solid white;
+    }
+
+    #menu li:first-child {
+        border-top: 1px solid #fff;
+    }
+
+    #menu li:hover {
+        background-color: #3ba8a8;
+    }
+
+    i.show_menu {
+        display: block;
+        color: #fff;
+        padding: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #cabecalho .logo {
+        font-size: 1.5rem;
+    }
+}
+
+/*Slider */
+#i1,
+#i2,
+#i3,
+#i4,
+#i5 {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    user-select: none;
+    background-color: #1c1c1c;
+}
+
+.container .slide_img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+
+}
+
+.slide_img h1 {
+    font-size: 4rem;
+    text-shadow: 4px 4px 4px black;
+    font-family: 'New Rocker', cursive;
+}
+
+.slide_img p {
+    font-size: 2rem;
+    text-shadow: 4px 4px 3px black;
+    max-width: 800px;
+    font-family: 'New Rocker', cursive;
+}
+
+.slide_img a {
+    background-color: #29B0F6;
+    display: block;
+    color: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+
+.slide_img a:hover {
+    color: gray;
+    transition: 0.6s;
+}
+
+.cover1 {
+    background-image: url(../imagens/montanha.jpg);
+}
+
+.cover2 {
+    background-image: url(../imagens/floresta.jpg);
+}
+
+.cover3 {
+    background-image: url(../imagens/jesus-voltara.jpg);
+}
+
+.cover4 {
+    background-image: url(../imagens/floresta2.jpg);
+}
+
+.cover5 {
+    background-image: url(../imagens/mar.jpg);
+}
+
+.prev,
+.next {
+    width: 12%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    color: rgba(244, 244, 244, .9);
+    z-index: 99;
+    transition: .45s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+label span {
+    position: relative;
+    font-size: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev:hover,
+.next:hover {
+    transition: .3s;
+    background-color: rgba(88, 88, 89, .8);
+    color: #ffffff;
+}
+
+.container #nav_slide {
+    width: 100%;
+    bottom: 12%;
+    height: 11px;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    cursor: default;
+}
+
+#nav_slide .dots {
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: .4s;
+}
+
+#nav_slide .dots:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: .25s
+}
+
+.slide_img {
+    z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five {
+    z-index: 9;
+    animation: scroll 1s ease-in-out;
+}
+
+#i1:checked ~ #nav_slide #dot1,
+#i2:checked ~ #nav_slide #dot2,
+#i3:checked ~ #nav_slide #dot3,
+#i4:checked ~ #nav_slide #dot4,
+#i5:checked ~ #nav_slide #dot5 {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+@keyframes scroll {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .container {
+        border: none;
+        width: 100%;
+    }
+
+    .slide_img h1 {
+        font-size: 2.2rem;
+        margin-top: 50px;
+    }
+
+    .slide_img p {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    label span {
+        font-size: 50pt;
+    }
+
+    .prev,
+    .next {
+        width: 15%;
+    }
+
+    #nav_slide .dots {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media screen and(min-width: 970px) {
+    .me {
+        display: none;
+    }
+}
+
 
 /*footer*/
-#rodape{width: 100%; background-color: #29B0F6; display: flex; flex-direction: column; text-align: center; align-items: center; justify-content: space-around; padding: 10px;}
-#rodape h2{color: #fff; margin: 5px;}
-#rodape p{color: #fff;}
-#rodape a{color: #fff;}
-#rodape a:hover{color: gray;}
+#rodape {
+    width: 100%;
+    background-color: #29B0F6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#rodape h2 {
+    color: #fff;
+    margin: 5px;
+}
+
+#rodape p {
+    color: #fff;
+}
+
+#rodape a {
+    color: #fff;
+}
+
+#rodape a:hover {
+    color: gray;
+}
+
+/*______________________________________________________________________________________________________________*/
+/*pagina causas sociais*/
+.causasSociais {
+    background-image: url(../imagens/Jesus.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    overflow: hidden;
+    color: #fff;
+}
+
+/*capa*/
+
+.causasSociais h1 {
+    font-size: 4rem;
+    text-shadow: 4px 4px 4px black;
+    font-family: 'New Rocker', cursive;
+}
+
+.causasSociais p {
+    font-size: 2rem;
+    text-shadow: 4px 4px 4px black;
+    font-family: 'New Rocker', cursive;
+    width: 800px;
+}
+
+.causasSociaisImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.causasSociaisImg ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.causasSociaisImg ul li {
+    flex: 1 1 25%;
+    margin: 20px;
+    position: relative;
+    background: #085BA9;
+    box-shadow: 4px 4px 6px black;
+}
+
+.causasSociaisImg a:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.causasSociaisImg h2 {
+    font-size: 1.2rem;
+    font-family: 'Caesar Dressing', cursive, sans-serif;
+    padding: 20px;
+    color: #085BA9;
+}
+
+.causasSociaisImg h3 {
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    background: #085BA9;
+    color: #fff;
+    padding: 5px;
+}
+
+@media screen and (max-width:411px) {
+    .causasSociais h1 {
+        font-size: 2.2rem;
+        margin-top: 50px;
+    }
+    
+    .causasSociais p {
+        font-size: 1.2rem;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .causasSociaisImg ul {
+        flex-direction: column;
+    }
+
+    .causasSociaisImg ul li {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+     .causasSociaisImg ul li {
+        flex: 1 1 40%;
+    }
+}
