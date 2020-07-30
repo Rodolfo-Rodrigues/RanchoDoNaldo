@@ -141,7 +141,6 @@ i.show_menu {
     background-repeat: no-repeat;
     color: #fff;
     overflow: hidden;
-
 }
 
 .slide_img h1 {
@@ -182,15 +181,11 @@ i.show_menu {
 }
 
 .cover3 {
-    background-image: url(../imagens/jesus-voltara.jpg);
+    background-image: url(../imagens/mar.jpg);
 }
 
 .cover4 {
     background-image: url(../imagens/floresta2.jpg);
-}
-
-.cover5 {
-    background-image: url(../imagens/mar.jpg);
 }
 
 .prev,
@@ -388,6 +383,49 @@ label span {
     width: 800px;
 }
 
+.Matheus25 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    box-shadow: 4px 4px 6px gray;
+    border: 5px solid gray;
+    border-radius: 50px;
+    background-color: #FFD477;
+}
+
+.Matheus25 h2 {
+    font-size: 2rem;
+    color: #085BA9;
+    font-family: 'Caesar Dressing', cursive, sans-serif;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.Matheus25 ul li {
+    padding: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .causasSociais h1 {
+        font-size: 2.2rem;
+        margin-top: 100px;
+    }
+
+    .causasSociais p {
+        font-size: 0.9rem;
+        padding: 30px;
+        width: 400px;
+    }
+
+    .causasSociaisImg ul {
+        flex-direction: column;
+    }
+}
+
+
 .causasSociaisImg {
     display: flex;
     flex-direction: column;
@@ -395,17 +433,21 @@ label span {
     text-align: center;
 }
 
+.causasSociaisImg img {
+    box-shadow: 5px 5px 7px black;
+    border-radius: 15px;
+}
+
+
 .causasSociaisImg ul {
     display: flex;
     flex-wrap: wrap;
 }
 
 .causasSociaisImg ul li {
-    flex: 1 1 25%;
+    flex: 1 1 28%;
     margin: 20px;
     position: relative;
-    background: #085BA9;
-    box-shadow: 4px 4px 6px black;
 }
 
 .causasSociaisImg a:hover {
@@ -414,7 +456,7 @@ label span {
 }
 
 .causasSociaisImg h2 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: 'Caesar Dressing', cursive, sans-serif;
     padding: 20px;
     color: #085BA9;
@@ -426,32 +468,64 @@ label span {
     right: 0;
     background: #085BA9;
     color: #fff;
-    padding: 5px;
+    padding: 5px 10px;
+    border-radius: 0 0 15px 0;
 }
 
-@media screen and (max-width:411px) {
-    .causasSociais h1 {
-        font-size: 2.2rem;
-        margin-top: 50px;
-    }
-    
-    .causasSociais p {
+@media (max-width:768px) {
+    .causasSociaisImg h2 {
         font-size: 1.2rem;
-        padding: 10px;
-        width: 100%;
     }
 
-    .causasSociaisImg ul {
-        flex-direction: column;
-    }
-
-    .causasSociaisImg ul li {
-        flex: 1 1 100%;
-    }
 }
 
-@media screen and (max-width:768px) {
-     .causasSociaisImg ul li {
-        flex: 1 1 40%;
-    }
+/*página Sobre*/
+.sobrebody {
+    background-image: url(../imagens/floresta2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.sobre {
+    max-width: 960px;
+    margin: 100px auto 20px;
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.sobre h1,
+.sobre h2,
+.sobre h3,
+.sobre h4 {
+    font-size: 1.5rem;
+    font-family: 'Caesar Dressing', cursive, sans-serif;
+    padding: 20px;
+    color: #085BA9;
+    text-shadow: 2px 2px 2px black;
+}
+
+.sobre p {
+    line-height: 1.5rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.sobre ul {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.sobre li {
+    padding: 5px;
+    line-height: 1.5rem;
+    list-style-type: disc;
+    list-style-position: inside;
 }
